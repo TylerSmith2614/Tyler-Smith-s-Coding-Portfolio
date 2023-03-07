@@ -12,6 +12,9 @@ https://tylersmith2614.github.io/Tyler-Smith-s-Coding-Portfolio/
 ![Alt text](Assets/Images/screenshot%203.png)
 ## User Story
 
+
+#Note of help with source code
+Referenced a youtube video tutorial by Easy Tutorials for guidance on source code. https://www.youtube.com/watch?v=0YFrGy_mzjY&t=6320s
 ```
 AS AN employer
 I WANT to view a potential employee's deployed portfolio of work samples
