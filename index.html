@@ -4,10 +4,160 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/style.css">
-  <title>Tyler Smith's Coding Portfolio</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://kit.fontawesome.com/433ad2c3a4.js" crossorigin="anonymous"></script>
+  <title>Tyler Smith's Porfolio </title>
 </head>
 <body>
-  <img src="" alt="">
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="./Assets/Images/tylersmithlogo.png" alt="Tyler Smith" class="logo">
+        <ul>
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about-me">About Me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-text">
+      <h1 class="hi"><pre> Hi, my name is 
+<span class="name"> Tyler Smith.</span></pre></h1>
+        <div class="build"><pre> I build beautiful things 
+for the web.
+        </pre>
+      </div>
+      </div>
+    </div>
+    <!-- About Me -->
+<div id="about-me">
+  <div class="container">
+    <div class="row">
+      <div class="about-me-col-1">
+        <img src="./Assets/Images/Smith Tyler_crop.jpg" alt="">
+      </div>
+      <div class="about-me-col-2">
+        <p class="sub-title">About Me</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Nulla nisi architecto quam esse illum sit dolore. Reiciendis
+           nobis voluptatibus dolorem, magni vitae iusto repudiandae, 
+           assumenda deleniti perferendis at quos illum.</p>
+
+           <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+           </div>
+           <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>Full Stack Developer</span><br>Designing Web/App Interfaces</li>
+              <li><span>Web Development</span><br>Web Development</li>
+              <li><span>App Development</span><br>Building Android/IOS Devices</li>
+            </ul>
+           </div>
+           <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>Teacher</span><br>Designing Web/App Interfaces</li>
+              <li><span>Bootcamp</span><br>Web Development</li>
+              <li><span>App Development</span><br>Building Android/IOS Devices</li>
+            </ul>
+           </div>
+           <div class="tab-contents" id="education">
+            <ul>
+              <li><span>Colorado State University</span><br>Designing Web/App Interfaces</li>
+              <li><span>Web Development</span><br>Web Development</li>
+              <li><span>App Development</span><br>Building Android/IOS Devices</li>
+            </ul>
+           </div>
+      </div>
+    </div>
+  </div>
+
+
+<!-- Projects -->
+<div id="projects">
+  <div class="container"></div>
+    <p class="sub-title">My Projects</p>
+    <div class="work-list">
+      <div class="work">
+        <img class="firstproject" src="./Assets/Images/Horiseon Landing Page.png" alt="Horiseon Landing Screenshot">
+        <div class="layer">
+          <p class="projecttitle">Horiseon Refactor Challenge</p> 
+          <p>Refactored existing code to make a codebase that follows accessibility standards for the webpage of a Marketing Agency</p>
+              <a href="https://tylersmith2614.github.io/Horiseon-Landing-Page-Code-Challenge-1/" target="_blank"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img class="otherprojects" src="./Assets/Images/javascript stock photo.jpg" alt="Javascript Logo">
+        <div class="layer">
+          <p class="projecttitle">Project 2</p> 
+          <p>Lorem ipsum dolor sit amet consectetur adi adipisci quod sccusantium, repellat temporibus tempora possimus sapiente.</p>
+              <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img class="otherprojects" src="./Assets/Images/hero.jpg" alt="react logo">
+        <div class="layer">
+          <p class="projecttitle">Project 3</p> 
+          <p>Lorem ipsum dolocepturi adipisci quod suscipit anilorem, accusantium, repellat temporibus tempora possimus sapiente.</p>
+              <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+    </div>
+    <a href="#" class="button">See More</a>
+  </div>
+</div>
+
+<!-- Contact -->
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <p class="sub-title">Contact Me</p>
+        <p><i class="fa-sharp fa-regular fa-paper-plane"></i>tylersmith2614@gmail.com</p>
+        <p><i class="fa-solid fa-phone"></i>(408) 387-4481</p>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/tylersmith2614/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com/TylerSmith2614" target="_blank"><i class="fa-brands fa-github"></i></i></a>
+        </div>
+        <a class="button button2" href="">Download Resume</a>
+      </div>
+      <div class="contact-right">
+        <form>
+          <input type="text" name="Name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <textarea name="Message" cols="30" rows="6" placeholder="Your Message"></textarea>
+          <button type="submit" class="button button2" >Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Nav Bar JavaScript  -->
+<script>
+var tablinks = document.getElementsByClassName("tablinks");
+var tabcontents = document.getElementsByClassName("tab-contents");
+
+function opentab(tabname){
+  for(tablink of tablinks){
+    tablink.classList.remove("active-link");
+  }
+  for(tabcontent of tabcontents){
+  tabcontent.classList.remove("active-tab");
+  } 
+  event.currentTarget.classList.add("active-link");
+  document.getElementById(tabname).classList.add("active-tab");
+}
+
+
+</script>
+<footer>
+  <div class="copyright">
+    <p>Made with <i class="fa-solid fa-heart"></i> by Tyler Smith<br></p>
+    <p>© 2023 Tyler Smith</p>
+  </div>
+</footer>
 </body>
 </html>
