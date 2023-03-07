@@ -357,7 +357,7 @@ form .button2 {
 /* Tablets */
 @media screen and (max-width: 992px) {
   #about-me {
-    padding: 550px 0;
+    padding: 350px 0;
   }
   .about-me-col-1 img{
     border-radius: 15px;
@@ -383,5 +383,3 @@ form .button2 {
     color: var(--lightblue);
   }
 } 
-
-/* test comment */
